@@ -10,8 +10,8 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
     background: linear-gradient(35deg, hsl(192, 70%, 51%),#94eeaf, #5ce4d8,hsl(192, 72%, 72%),#94eeaf, #5ce4d8);
 }
 .navigation-items > a{
@@ -19,14 +19,14 @@ body{
     font-size: 1.3em;
     color: hsl(229, 5%, 47%);
     font-weight: 600;
-    margin-left: 10px;
+    margin-left: 10rem;
 }
 .navigation-bar > button{
-    padding: 12px 28px;
+    padding: 12rem 28rem;
     border: none;
     outline-width: 0;
     color: white;
-    border-radius: 24px;
+    border-radius: 24rem;
     cursor: pointer;
     font-weight: 400;
     background-image: linear-gradient(120deg,
@@ -38,7 +38,7 @@ body{
     justify-content: space-around;
     align-items: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 34px;
+    font-size: 34rem;
     height: 90vh;
 }
 .customer-img-container {
@@ -48,7 +48,7 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 20px;
+    padding-top: 20rem;
 }
 .customer-img-container > img{
     width: auto;
@@ -60,23 +60,23 @@ body{
    align-items: flex-start;
 }
 .customer-section-container > h1{
-   font-size: 70px;
+   font-size: 70rem;
    font-weight: 800;
-   margin-bottom: 20px;
+   margin-bottom: 20rem;
    color: hsl(233, 60%, 33%);
    line-height: 1.1;
 }
 .customer-section-container > p{
    color: hsl(233, 8%, 62%);
-   margin-bottom: 15px;
+   margin-bottom: 15rem;
    font-weight: 700;
 }
 .customer-section-container > button{
-    padding: 12px 28px;
+    padding: 12rem 28rem;
     border: none;
     outline-width: 0;
     color: white;
-    border-radius: 24px;
+    border-radius: 24rem;
     cursor: pointer;
     font-weight: 400;
     background-image: linear-gradient(120deg,
@@ -85,7 +85,7 @@ body{
 }
 .container{
     background-color: hsl(220, 16%, 96%);
-    box-shadow: 0 10px 20px rgba(19, 11, 11, 0.19), 0 6px 6px rgba(8, 6, 6, 0.23);
+    box-shadow: 0 10rem 20rem rgba(19, 11, 11, 0.19), 0 6rem 6rem rgba(8, 6, 6, 0.23);
     background-image: linear-gradient(120 deg,hsl(rgb(81, 81, 177),rgb(60, 60, 92)
     ,blue));
 }
@@ -97,14 +97,14 @@ body{
     padding-bottom: 10vh;
 }
 .why-us > h1{
-    font-size: 45px;
+    font-size: 45rem;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin-bottom: 20rem;
     color: hsl(233, 60%, 33%);
 }
 .why-us > p{
     color: hsl(233, 8%, 62%);
-    margin-bottom: 15px;
+    margin-bottom: 15rem;
     font-weight: 700;
 }
 .features-section{
@@ -117,21 +117,21 @@ body{
     padding-bottom: 10vh;
 }
 .feature-item{
-    width: 65px;
-    margin-bottom: 5px;
+    width: 65rem;
+    margin-bottom: 5rem;
 }
 .feature-item > h1{
-    font-size: 25px;
+    font-size: 25rem;
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 10rem;
     color: hsl(233, 82%, 44%);
 }
 .feature-item > p{
     color: hsl(233, 8%, 62%);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     font-weight: 700;
     display: flex;
 }
@@ -151,35 +151,35 @@ body{
     align-items: flex-start;
 }
 .blog-section > h1{
-    font-size: 45px;
+    font-size: 45rem;
     font-weight: 800;
     margin-left: 1.25rem;
-    margin-bottom: 10px;
+    margin-bottom: 10rem;
     color: hsl(233, 82%, 44%);
 }
 .article {
     height: max-content;
-    width: 250px;
-    margin-top: 20px;
-    margin-left: 15px;
+    width: 250rem;
+    margin-top: 20rem;
+    margin-left: 15rem;
     background-color: #fff;
   }
   .article > img {
-    width: 250px;
-    height: 250px;
+    width: 250rem;
+    height: 250rem;
   }
 .content {
-    padding: 15px;
+    padding: 15rem;
   }
   .content > p {
     color: hsl(233, 8%, 62%);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 14rem;
   }
   .content > h4 {
     color: hsl(233, 26%, 24%);
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
   }
   .footer {
     background-color: hsl(233, 26%, 24%);
@@ -204,23 +204,23 @@ body{
   .menu > a {
     text-decoration: none;
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 15rem;
     font-weight: 600;
   }
   .social-container {
     margin-top: 3rem;
   }
   .social-container > img {
-    margin-left: 10px;
+    margin-left: 10rem;
     cursor: pointer;
   }
   .footer-container > button {
     margin-top: 3rem;
-    padding: 12px 28px;
+    padding: 12rem 28rem;
     border: none;
     outline-width: 0;
     color: white;
-    border-radius: 24px;
+    border-radius: 24rem;
     cursor: pointer;
     font-weight: 400;
     background-image: linear-gradient(
@@ -229,4 +229,3 @@ body{
       hsl(136, 65%, 51%)
     );
   }
-  
