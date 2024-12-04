@@ -10,10 +10,19 @@
 </head>
 <body>
     <nav class="navigation-bar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
         <img src="Navbharatbank.png" alt="Navbharat Bank Logo">
-        <div class="navigation-items">
+        <div class="navigation-items" id="nav-items">
             <a href="#">Home</a>
             <a href="#">About</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Services</a>
+                <div class="dropdown-content">
+                    <a href="#">Banking</a>
+                    <a href="#">Loans</a>
+                    <a href="#">Investments</a>
+                </div>
+            </div>
             <a href="#">Blog</a>
             <a href="#">Contact</a>
             <a href="#">Careers</a>
@@ -122,5 +131,15 @@
             <button>Request Invite</button>
         </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            var navItems = document.getElementById('nav-items');
+            if (navItems.style.display === 'block') {
+                navItems.style.display = 'none';
+            } else {
+                navItems.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
