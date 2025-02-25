@@ -1,347 +1,102 @@
-/* Base styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbharat Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="navb.ico">
+</head>
+<body>
+    <nav class="navigation-bar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <img src="Navbharatbank.png" alt="Navbharat Bank Logo">
+        <div class="navigation-items" id="nav-items">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Services</a>
+                <div class="dropdown-content">
+                    <a href="#">Banking</a>
+                    <a href="#">Loans</a>
+                    <a href="#">Investments</a>
+                </div>
+            </div>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <a href="#">Careers</a>
+        </div>
+        <button>Request Invite</button>
+    </nav>
+    <header class="customer-section">
+        <div class="customer-section-container">
+            <h1>Digital Banking <br /> New Normal</h1>
+            <p>Take your financial life online.<br /><strong>"Embrace Digital".</strong><br />
+            A one-stop destination for your financial investments.</p>
+            <button>Request Invite</button>
+        </div>
+        <div class="customer-img-container">
+            <img src="13.webp" alt="Digital Banking">
+        </div>
+    </header>
+    <div class="container">
+        <section class="why-us">
+            <h1>Why choose Navbharat bank?</h1>
+            <p>We leverage online banking to turn your bank account into your financial hub.<br />
+            Control your finances like never before.</p>
+        </section>
+        <section class="features-section">
+            <div class="feature-item">
+                <img src="online.svg" alt="Online Banking">
+                <h1>Online Banking</h1>
+                <p>Our modern web and mobile<br />
+                applications allow you to keep track of your finances wherever you are in the world.</p>
+            </div>
+            <div class="feature-item">
+                <img src="budgeting.svg" alt="Simple Budgeting">
+                <h1>Simple Budgeting</h1>
+                <p>See exactly where your money goes every month. Receive notifications when you're close to hitting your limits.</p>
+            </div>
+            <div class="feature-item">
+                <img src="onboarding.svg" alt="Fast Onboard">
+                <h1>Fast Onboard</h1>
+                <p>Open your account in minutes online and start taking control of your finances.</p>
+            </div>
+            <div class="feature-item">
+                <img src="api.svg" alt="Open API">
+                <h1>Open API</h1>
+                <p>Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.</p>
+            </div>
+        </section>
+        <section class="blog-section">
+            <h1>Latest Articles</h1>
+            <div class="article-container">
+                <div class="article">
+                    <img src="money.jfif" alt="Receive money in any currency">
+                    <div class="content">
+                        <p>Ishita Singh</p>
+                        <h4>Receive money in any<br /> currency with no additional fees charged</h4>
+                        <p>The world is getting smaller and we are advancing towards a digital era.</p>
+                    </div>
+                </div>
+                <div class="article">
+                    <img src="budget.webp" alt="Easy Budgeting solutions">
+                    <div class="content">
+                        <p>Ishita Singh</p>
+                        <h4>Easy Budgeting solutions.</h4>
+                        <p>Our simple budgeting solutions help you manage your finances effectively.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: hsl(220, 16%, 96%);
-}
-
-/* Navigation bar */
-.navigation-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background: linear-gradient(35deg, hsl(192, 70%, 51%), #94eeaf, #5ce4d8, hsl(192, 72%, 72%), #94eeaf, #5ce4d8);
-}
-
-.navigation-items {
-    display: flex;
-    gap: 1rem;
-}
-
-.menu-icon {
-    display: none;
-    cursor: pointer;
-}
-
-.navigation-items > a {
-    text-decoration: none;
-    font-size: 1.3em;
-    color: hsl(229, 5%, 47%);
-    font-weight: 600;
-}
-
-.navigation-bar > button {
-    padding: 0.75rem 1.75rem;
-    border: none;
-    outline-width: 0;
-    color: white;
-    border-radius: 1.5rem;
-    cursor: pointer;
-    font-weight: 400;
-    background-image: linear-gradient(120deg, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
-}
-
-/* Dropdown menu */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-
-/* Customer section */
-.customer-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 2.125rem;
-    height: 90vh;
-}
-
-.customer-img-container {
-    width: 50%;
-    height: auto;
-}
-
-.customer-img-container > img {
-    width: 100%;
-    height: auto;
-}
-
-.customer-section-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.customer-section-container > h1 {
-    font-size: 4.375rem;
-    font-weight: 800;
-    margin-bottom: 1.25rem;
-    color: hsl(233, 60%, 33%);
-    line-height: 1.1;
-}
-
-.customer-section-container > p {
-    color: hsl(233, 8%, 62%);
-    margin-bottom: 0.9375rem;
-    font-weight: 700;
-}
-
-.customer-section-container > button {
-    padding: 0.75rem 1.75rem;
-    border: none;
-    outline-width: 0;
-    color: white;
-    border-radius: 1.5rem;
-    cursor: pointer;
-    font-weight: 400;
-    background-image: linear-gradient(120deg, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
-}
-
-/* Container */
-.container {
-    background-color: hsl(220, 16%, 96%);
-    box-shadow: 0 0.625rem 1.25rem rgba(19, 11, 11, 0.19), 0 0.375rem 0.375rem rgba(8, 6, 6, 0.23);
-    padding: 2rem;
-}
-
-/* Why Us section */
-.why-us {
-    padding-top: 10vh;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 10vh;
-}
-
-.why-us > h1 {
-    font-size: 2.8125rem;
-    font-weight: 800;
-    margin-bottom: 1.25rem;
-    color: hsl(233, 60%, 33%);
-}
-
-.why-us > p {
-    color: hsl(233, 8%, 62%);
-    margin-bottom: 0.9375rem;
-    font-weight: 700;
-}
-
-/* Features section */
-.features-section {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-bottom: 10vh;
-}
-
-.feature-item {
-    width: 20%;
-    text-align: center;
-    padding: 1rem;
-    transition: transform 0.3s ease;
-}
-
-.feature-item:hover {
-    transform: translateY(-10px);
-}
-
-.feature-item > img {
-    max-width: 100px;
-    margin-bottom: 20px;
-}
-
-.feature-item > h1 {
-    font-size: 1.5625rem;
-    font-weight: 800;
-    margin-bottom: 0.625rem;
-    color: hsl(233, 82%, 44%);
-}
-
-.feature-item > p {
-    color: hsl(233, 8%, 62%);
-    margin-top: 0.625rem;
-    margin-bottom: 0.625rem;
-    margin-left: 0.3125rem;
-    margin-right: 0.3125rem;
-    font-weight: 700;
-}
-
-/* Blog section */
-.blog-section {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding-bottom: 10vh;
-}
-
-.article-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.blog-section > h1 {
-    font-size: 2.8125rem;
-    font-weight: 800;
-    margin-left: 1.25rem;
-    margin-bottom: 0.625rem;
-    color: hsl(233, 82%, 44%);
-}
-
-.article {
-    height: max-content;
-    width: 15.625rem;
-    margin-top: 1.25rem;
-    margin-left: 0.9375rem;
-    background-color: #fff;
-}
-
-.article > img {
-    width: 15.625rem;
-    height: 15.625rem;
-}
-
-.content {
-    padding: 0.9375rem;
-}
-
-.content > p {
-    color: hsl(233, 8%, 62%);
-    font-weight: 400;
-    font-size: 0.875rem;
-}
-
-.content > h4 {
-    color: hsl(233, 26%, 24%);
-    padding-bottom: 0.3125rem;
-    padding-top: 0.3125rem;
-}
-
-/* Footer */
-.footer {
-    background-color: hsl(233, 26%, 24%);
-    height: 30vh;
-}
-
-.footer-container {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-top: 0.125rem;
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.menu > a {
-    text-decoration: none;
-    color: white;
-    margin-bottom: 0.9375rem;
-    font-weight: 600;
-}
-
-.social-container {
-    margin-top: 0.1875rem;
-}
-
-.social-container > img {
-    margin-left: 0.625rem;
-    cursor: pointer;
-}
-
-.footer-container > button {
-    margin-top: 0.1875rem;
-    padding: 0.75rem 1.75rem;
-    border: none;
-    outline-width: 0;
-    color: white;
-    border-radius: 1.5rem;
-    cursor: pointer;
-    font-weight: 400;
-    background-image: linear-gradient(120deg, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .navigation-bar {
-        flex-direction: column;
-    }
-    .navigation-items {
-        flex-direction: column;
-        align-items: center;
-        display: none;
-    }
-    .menu-icon {
-        display: block;
-    }
-    .customer-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .customer-section-container > h1 {
-        font-size: 3rem;
-    }
-    .features-section, .blog-section {
-        flex-direction: column;
-        align-items: center;
-    }
-    .feature-item, .article {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+    <script>
+        function toggleMenu() {
+            const navItems = document.getElementById('nav-items');
+            navItems.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
